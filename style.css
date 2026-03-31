@@ -112,7 +112,7 @@ body{
 
 .cart-profile{
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 
 /*FIND CLOTHES THAT MATCH YOUR STYLE SECTION*/
@@ -165,7 +165,7 @@ body{
 .numbers{
     display: flex;
     flex-wrap: wrap;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Satoshi";
     font-weight: 700;
     font-size: 40px;
     margin-top: 20px;
@@ -177,7 +177,7 @@ body{
 .numbers-list{
     font-size: 10px;
     font-weight: 300;
-    font-family: "Inter", sans-serif;
+    font-family: "Satoshi";
     
 }
 .small-star{
@@ -291,8 +291,9 @@ body{
 }
 #two-sixty{
     text-decoration: line-through;
-    font-weight: 100;
+    font-weight: 600;
     font-family: "Satoshi";
+    color: rgb(206, 213, 219);
 }
 
 .view-all{
@@ -317,7 +318,81 @@ hr{
 .top-selling > h1{
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     font-family: "IntegralCF";
 }
 
-/*Top Selling Section*/
+/*Dress Style section*/
+
+.dress-style{
+background-color: rgb(244, 243, 242);
+display: grid;
+gap: 20px;
+justify-content: center;
+border-radius: 40px;
+margin: 0 60px;
+}
+
+.dress-style h1{
+    font-family: "IntegralCF";
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0;
+}
+.casual-formal{
+    display: flex;
+    gap: 20px;
+}
+
+.party-gym{
+    display: flex;
+    gap: 20px;
+}
+
+/*CUSTOMER REVIEW SECTION*/
+.happy-customers{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 700px;
+}
+
+.happy-customers h1{
+    font-family: "IntegralCF";
+}
+
+.scroll-arrows{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customer-review{
+    border: 0.5px solid rgb(230, 227, 227);
+    min-width: 300px;
+    font-family: "Satoshi";
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.customer-name{
+    display: flex;
+    align-items: center;
+}
+
+.customer-name p{
+    font-weight: 600;
+}
+
+.the-review{
+    font-size: 15px;
+    color:  rgb(94, 94, 93);
+    margin-top: -4px;
+}
+
+.c-review{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+}
