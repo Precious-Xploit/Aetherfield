@@ -1,0 +1,298 @@
+@font-face {
+    font-family: "IntegralCF";
+    src: url('/Assests/fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-regular.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IntegralCF";
+    src: url('/Assests/fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Versace";
+    src: url('/Assests/fonts/Versace-Font/Radiant\ Bold\ Condensed\ Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Zara";
+    src: url('/Assests/fonts/Zara-Font/OPTIBodoni-Antiqua.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gucci";
+    src: url('/Assests/fonts/Gucci-Font/Gucci-Font/Granjon.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Prada";
+    src: url('/Assests/fonts/Prada-Font/engry.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "futura";
+    src: url('/Assests/fonts/futura-light/futura-light/Futura\ Light.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+body{
+    margin: 0px;
+    min-width: 1500px;
+}
+
+/*HEADER SECTIION*/
+.heroSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.heroSection >img{
+    width: 160px;
+    height: 22px;
+}
+
+.List{
+    display: flex;
+    font-size: 15px;
+    gap: 25px;
+}
+
+#shop{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#shop > img{
+    width: 17px;
+    height: 15px;
+}
+
+.search-section{
+    display: flex;
+    align-items: center;
+}
+
+.search-section >img{
+    position: absolute;
+    width: 15px;
+    padding-left: 10px;
+}
+
+.search-section > input{
+    padding-left: 30px;
+    width: 400px;
+    height: 40px;
+    background-color: rgba(217, 216, 216, 0.495);
+    border-radius: 25px;
+    border: 0;
+}
+
+.cart-profile{
+    display: flex;
+    gap: 10px;
+}
+
+/*FIND CLOTHES THAT MATCH YOUR STYLE SECTION*/
+
+.new-sec{
+    display: flex;
+    background-color: rgb(244, 243, 242);
+    position: relative;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+
+.bg-image{
+    padding-top: 30px;
+    padding-left: 200px;
+}
+
+.introduction{
+    padding-top: 40px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+
+.text-section h1{
+    font-family: "Integralcf", sans-serif;
+    line-height: 60px;
+    font-size: 45px;
+}
+.text-section p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.text-section button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    
+}
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 20px;
+    justify-content: space-between;
+    max-width: 400px;
+    line-height: 0;
+}
+
+.numbers-list{
+    font-size: 10px;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    
+}
+.small-star{
+    display: flex;
+    position: absolute;
+    top: 40%;
+}
+
+.big-star{
+    position: relative;
+    margin-top: 5%;
+    right: 20px;
+}
+
+/*BRANDS */
+
+.brands{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    position: relative;
+    
+}
+
+#versace{
+    font-family: "Versace";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#zara{
+    font-family: "Zara";
+    text-transform: uppercase;
+}
+
+#gucci{
+    font-family: "Gucci";
+    text-transform: uppercase;
+}
+
+#prada{
+    font-family: "Prada";
+
+}
+
+#calvin-klein{
+    font-family: "futura";
+}
+   
+
+.new-arrival{
+    display: flex;
+    justify-content: center;
+}
+/*NEW ARRIVAL SESSION*/
+
+.new-arrival h1{
+    font-family: "IntegralCF";
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/*OUTFIT SECTION*/
+.outfit-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.outfit-details > p{
+    font-family: 'Satoshi';
+    font-weight: 600;
+    position: relative;
+    position: relative;
+}
+
+.rating-stars{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+.outfit-details-p{
+    position: relative;
+    top: -60px;
+}
+.outfit-details-price{
+    display: flex;
+    gap: 5px;
+    font-family: "Satoshi";
+    align-items: center;
+    position: relative;
+    top: -60px;
+}
+
+.outfit-details-price > img{
+    height: 20px;
+}
+#two-forty{
+    font-family: "Satoshi";
+    font-weight: 600;
+}
+#two-sixty{
+    text-decoration: line-through;
+    font-weight: 100;
+    font-family: "Satoshi";
+}
+
+/*View All Section*/
