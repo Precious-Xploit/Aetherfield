@@ -41,7 +41,7 @@
 @font-face {
     font-family: "Prada";
     src: url('/Assests/fonts/Prada-Font/engry.otf') format('opentype');
-    font-weight: 700;
+    font-weight:900;
     font-display: swap;
     font-style: normal;
 }
@@ -54,10 +54,9 @@
     font-style: normal;
 }
 
-
 body{
-    margin: 0px;
-   
+margin: 0px;
+   width: 1500px;
 }
 
 /*HEADER SECTIION*/
@@ -68,7 +67,7 @@ body{
     margin-top: 10px;
     
 }
-.heroSection >img{
+.heroSection .theImg{
     width: 160px;
     height: 22px;
 }
@@ -115,6 +114,7 @@ body{
     gap: 25px;
 }
 
+
 /*FIND CLOTHES THAT MATCH YOUR STYLE SECTION*/
 
 .new-sec{
@@ -159,9 +159,9 @@ body{
     border-radius: 50px;
     text-align: center;
     font-size: 15px;
-    margin-top: 10px;
-    
+    margin-top: 10px;  
 }
+
 .numbers{
     display: flex;
     flex-wrap: wrap;
@@ -201,7 +201,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    font-size: 25px;
+    font-size: 35px;
     position: relative;
     
 }
@@ -215,6 +215,7 @@ body{
 #zara{
     font-family: "Zara";
     text-transform: uppercase;
+    letter-spacing: -7px;
 }
 
 #gucci{
@@ -224,7 +225,7 @@ body{
 
 #prada{
     font-family: "Prada";
-
+    font-weight: 900;
 }
 
 #calvin-klein{
@@ -331,6 +332,7 @@ gap: 20px;
 justify-content: center;
 border-radius: 40px;
 margin: 0 60px;
+padding-bottom: 100px;
 }
 
 .dress-style h1{
@@ -394,11 +396,8 @@ margin: 0 60px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    scrollbar-width: none;
     gap: 10px;
-}
-
-.c-review::-webkit-scrollbar{
-    width: 0;
 }
 
 /*FOOTER SECTION*/
@@ -498,8 +497,8 @@ footer{
     
     border-radius: 50px;
      background-color: white;
-     width: 15px;
-     height: 15px;
+     width: 10px;
+     height: 12px;
      padding: 10px;
 
 }
@@ -556,5 +555,6 @@ footer{
 .payment-opt > img{
      background-color: white;
      width: 25px;
-     height: 15px;
+     height: 10px;
+     padding: 5px;
 }
