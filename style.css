@@ -56,26 +56,57 @@
 
 body{
 margin: 0 auto;
-   width: 1500px;
+   width: 1350px;
+}
+
+/* SIGN UP SECTION */
+
+.signUp{
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Satoshi";
+}
+
+.signUp > p{
+text-align: center;
+font-size: 12px;
+}
+
+.signUp span{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.signUp img{
+    position: absolute;
+    right: 120px;
 }
 
 /*HEADER SECTIION*/
 .heroSection{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    
+    margin-top: 20px;
+    gap: 65px;
 }
-.heroSection .theImg{
-    width: 160px;
-    height: 22px;
+
+#menu{
+    display: none;
+}
+
+#s-icon{
+    display: none;
 }
 
 .List{
     display: flex;
     font-size: 15px;
-    gap: 25px;
+    gap: 20px;
 }
 
 #shop{
@@ -88,6 +119,10 @@ margin: 0 auto;
 .search-section{
     display: flex;
     align-items: center;
+}
+
+.s-icon{
+    display: none;
 }
 
 .search-section >img{
@@ -107,7 +142,7 @@ margin: 0 auto;
 
 .cart-profile{
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
 
@@ -119,33 +154,39 @@ margin: 0 auto;
     display: flex;
     background-color: #f2f0f1;
     position: relative;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 40px;
     margin-top: 10px;
     
 }
 
 .bg-image{
     padding-top: 30px;
-    padding-left: 200px;
+    
+}
+
+.bg-image img{
+    width: 500px;
 }
 
 .introduction{
-    padding-top: 40px;
-    width: 400px;
-    margin-bottom: 20px;
+    padding-top: 60px;
+    width: 500px;
+    padding-left: 45px;
 }
 
 
 .text-section h1{
     font-family: "Integralcf", sans-serif;
     line-height: 60px;
-    font-size: 45px;
+    font-size: 55px;
 }
 .text-section p{
     font-family: "Inter", sans-serif;
     font-weight: 200;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
+    color: #747272;
 }
 
 .text-section button{
@@ -156,7 +197,7 @@ margin: 0 auto;
     border: none;
     border-radius: 50px;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 10px;  
 }
 
@@ -169,10 +210,10 @@ margin: 0 auto;
     flex-wrap: wrap;
     font-family: "Satoshi";
     font-weight: 700;
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 20px;
-    justify-content: space-between;
-    max-width: 400px;
+    gap: 20px;
+    max-width: 450px;
     line-height: 0;
 }
 
@@ -182,16 +223,23 @@ margin: 0 auto;
     font-family: "Satoshi";
     
 }
+
+.star-image{
+    display: flex;
+    position: relative;
+}
+
 .small-star{
     display: flex;
     position: absolute;
-    top: 40%;
+    top: 50%;
+
 }
 
 .big-star{
     position: relative;
     margin-top: 5%;
-    right: 20px;
+    right: 25px;
 }
 
 /*BRANDS */
@@ -201,11 +249,11 @@ margin: 0 auto;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 35px;
+    font-size:45px;
     position: relative;
-    
+    margin: -5px;
 }
 
 #versace{
@@ -246,6 +294,7 @@ margin: 0 auto;
     height: 100px;
     display: flex;
     align-items: center;
+    font-size: 40px;
 }
 
 /*OUTFIT SECTION*/
@@ -254,8 +303,10 @@ margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    
+   
 }
+
+
 
 .outfit-details > p{
     font-family: 'Satoshi';
@@ -307,6 +358,7 @@ margin: 0 auto;
 .view-all{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .view-all > button{
@@ -316,6 +368,10 @@ margin: 0 auto;
     border: 0.5px solid black;
     background-color: white;
     font-size: 12px;
+}
+
+.view-all > button:hover{
+    background-color: rgb(245, 250, 253);
 }
 
 hr{
@@ -328,6 +384,7 @@ hr{
     margin-top: 50px;
     margin-bottom: 50px;
     font-family: "IntegralCF";
+    font-size: 40px;
 }
 
 /*Dress Style section*/
@@ -386,6 +443,9 @@ hr{
     font-weight: 600;
 }
 
+.gym-two{
+    display: none;
+}
 /*CUSTOMER REVIEW SECTION*/
 .happy-customers{
     display: flex;
@@ -396,6 +456,7 @@ hr{
 
 .happy-customers h1{
     font-family: "IntegralCF";
+    font-size: 40px;
 }
 
 .scroll-arrows{
@@ -496,6 +557,7 @@ footer{
 .email-news button:hover{
     background-color: rgb(208, 203, 203);
 }
+
 .closing-sec{
     display: flex;
     justify-content: space-between;
@@ -539,6 +601,7 @@ footer{
 .last-sec h3{
     text-transform: uppercase;
     font-size: 15px;
+    font-weight: 500;
 }
 
 .last-sec ul{
@@ -579,12 +642,64 @@ footer{
 
 
 /*MOBILE RESSPONSIVENESS*/
-/*@media(min-width: 319px) and (max-width: 480px){
+@media(min-width: 319px) and (max-width: 480px){
     body{
+        width: 100%;
+    } 
+
+
+
+    .signUp{
         width: 90%;
         margin: 0 auto;
-    } 
+        justify-content: center;
+        position: static;
+    }
     
+    .signUp > img{
+        display: none;
+    }
+
+    /* NAV SECTION */
+
+    .heroSection{
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+
+
+
+    .cart-profile{
+        width: 90%;
+        justify-content: flex-end;
+    }
+    .menu-logo{
+        display: flex;
+        gap: 5px;
+        width: 90%;
+    }
+
+    .menu-logo > img{
+        width: 130px;
+    }
+
+    #menu{
+        width: 20px;
+    }
+    .s-icon{
+        display: flex;
+    }
+
+    .cart-profile{
+        gap: 10px;
+    }
+
+    #menu{
+        display: flex;
+    }
+
     .List {
         display: none;
     }
@@ -593,21 +708,31 @@ footer{
         display: none;
     }
 
-   
+
     .new-sec{
+        width: 90%;
+        margin: 0 auto;
         flex-direction: column;
+
     }
 
-    .text-section{
-      max-width: 300px;
-      
+    .introduction{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-left: 0px;
+        
     }
 
     .text-section h1{
-        font-size: 20px;
-        line-height: 30px;
+        max-width: 300px;
+        font-size: 27px;
+        line-height: 40px;
     }
 
+    .text-section p{
+        font-size: 12px;
+    }
 
     .text-section button{
         width: 90%;
@@ -619,8 +744,9 @@ footer{
     .numbers{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
         max-width: 324px;
+        font-size: 35px;
     }
 
     .numbers-list{
@@ -632,27 +758,62 @@ footer{
         top: 600px;
     }
 
+
+    .star-image{
+        justify-content: center;
+        
+    }
+
+    .small-star{
+        top: 60px;
+        left: 20px;
+    }
+
+    .small-star > img{
+        width: 40px;
+         
+    }
+
     .big-star{
         position: absolute;
+        top: -50px;
     }
+
+    .big-star > img{
+         width: 60px;
+    }
+
     .bg{
         position: absolute;
         display: flex;
         justify-content: center;
+       
     }
 
     .bg-image{
-        padding-left: 0px;
-        width: 24px;
+        padding: 0px;
+        margin-top: -80px;
     }
 
-    .brands{
+    .bg-image > img{
+        padding-top: 0px;
+        width: 90%;
+    }
 
-        font-size: 27px;
+    /* BRANDS */
+
+    .brands{
+        font-size: 30px;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
     #versace{
         margin: 0 ;
+       
     }
     #zara{
         margin: 0 ;
@@ -666,4 +827,265 @@ footer{
     #calvin-klein{
         margin: 0 ;
     } 
-}*/
+
+    /* NEW ARRIVAL */
+    .outfit-sec{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: 0 auto;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .new-arrival{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .new-arrival h1{
+        font-size: 30px;
+    }
+
+    .c-hr{
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .outfits > img{
+        border-radius: 15px;
+        width: 200px;
+    }
+
+    #trouser{
+        width: 185px;
+    }
+
+    #jean{
+        width: 173px;
+    }
+
+   .view-all button{
+        width: 90%;
+        margin: 0 auto;
+   }
+
+
+   .top-selling{
+        width: 90%;
+        margin: 0 auto;
+       
+   }
+
+   .top-selling h1{
+     font-size: 30px;
+   }
+   /* DRESS STYLE SECTION */
+
+   .dress-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 50px auto;
+   }
+
+   .dress-style h1{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 35px;
+   }
+
+   .casual-formal{
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+   }
+
+   .casual-formal img{
+        width: 100%;
+        height: 150px;
+        margin: 0 auto;
+        /* border: 2px solid rgb(87, 28, 114); */
+   }
+
+   .browse-img img{
+    width: 90%;
+    
+   }
+
+   .gym{
+        display: none;
+   }
+
+   .gym-two{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+   }
+
+
+   .gym-img > img{
+    background-color: white;
+    height: 150px;
+   }
+
+   .casual-formal p{
+    font-size: 20px;
+   }
+
+   .party-gym p{
+    font-size: 20px;
+   }
+
+   .party-gym img{
+        width: 100%;
+        height: 150px;
+        margin: 0 auto;
+        /* border: 2px solid rgb(199, 31, 82); */
+   }
+
+   .party-gym{
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+   }
+
+   .dress-style-sec{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+   }
+
+
+   /* REVIEW SECTION */
+
+   .our-cutomers{
+        width: 90%;
+        margin: 0 auto;
+   }
+
+   .happy-customers{
+        gap: 0px;
+        align-items: center;
+   }
+
+   .scroll-arrows > img{
+    margin-top: 50px;
+   }
+
+   .happy-customers h1{
+    font-size: 30px;
+   }
+
+   .customer-review{
+        min-width: 300px;
+        height: 170px;
+   }
+
+
+   /* SUBSCRIBE SECTION */
+
+   .subscribe{
+        flex-direction: column;
+        width:70%;
+        margin: 0 auto;
+        padding: 0 30px;
+        padding-bottom: 20px;
+   }
+
+   .email-news{
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+   }
+
+   .email input{
+        width: 250px;
+        
+   }
+
+   .email-news button{
+        width: 300px;
+   }
+
+   /* CLOSING SECTION */
+
+
+   .closing-sec{
+
+    display: grid;
+    width: 70%;
+    margin-top: -70px ;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+
+   .shop{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 0px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+   }
+
+   .shop p{
+    padding-top: 5px;
+   }
+
+   .shop img{
+    padding-top: 0px;
+   }
+
+   .company-help{
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .faq-resources{
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .f-hr{
+    width: 90%;
+    margin: 30px auto;
+
+   }
+
+
+   .payment-section{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+
+   .payment-opt{
+    width: 70%;
+    margin: 0 auto;
+    gap: 5px;
+    justify-content: center;
+   }
+
+   .payment-opt > img{
+    width: 40px;
+   }
+}

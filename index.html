@@ -8,9 +8,16 @@
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 </head>
 <body>
+    <section class="signUp">
+        <p>Sign up and get 20% off to your first order. <span>Sign Up Now</span></p>
+        <img src="Assests/images/close-icon.svg" alt="Close icon">
+    </section>
 
     <nav class="heroSection">
-        <img src="Assests/images/SHOP.CO.svg" alt="SHOP.CO">
+        <div class="menu-logo">
+            <img src="Assests/images/menu.svg" alt="M" id="menu">
+            <img src="Assests/images/SHOP.CO.svg" alt="SHOP.CO">
+        </div>
         <div class="List">
             <div id="shop">
                 <p>Shop</p>
@@ -24,11 +31,13 @@
         </div>
 
         <div class="search-section">
-            <img src="Assests/images/search-icon.svg" alt="Search Icon">
+            <img src="Assests/images/search-icon.svg" alt="Search Icon" class="s-icon">
             <input type="text" placeholder="Search Products...">
         </div>
 
+        
         <div class="cart-profile">
+            <img src="Assests/images/s-icon.svg" alt="Search Icon" class="s-icon">
             <img src="Assests/images/cart.svg" alt="Add to cart">
             <img src="Assests/images/profile-icon.svg" alt="Profile Icon">
         </div>
@@ -69,16 +78,18 @@
             
         </div>
 
-        <div class="small-star">
-            <img src="Assests/images/small-star.svg" alt="Small star">
-        </div>
-         
-        <div class="bg-image">
-            <img src="Assests/images/bg-img.svg" alt="Background Image">
-        </div>
+        <div class="star-image">
+            <div class="small-star">
+                <img src="Assests/images/small-star.svg" alt="Small star">
+            </div>
+            
+            <div class="bg-image">
+                <img src="Assests/images/bg-img.svg" alt="Background Image">
+            </div>
 
-        <div class="big-star">
-            <img src="Assests/images/big-star.svg" alt="big star">
+            <div class="big-star">
+                <img src="Assests/images/big-star.svg" alt="big star">
+            </div>
         </div>
         
     </section>
@@ -113,7 +124,7 @@
         </div>
 
         <div class="outfits">
-            <img src="Assests/images/skinny-trouser.svg" alt="skinny-trouser">
+            <img src="Assests/images/skinny-trouser.svg" alt="skinny-trouser" id="trouser">
             <div class="outfit-details">
                 <p>Skinny Fit Jeans</p>
                 <div class="rating-stars">
@@ -172,7 +183,7 @@
         <button>View All</button>
     </div>
 
-    <hr>
+    <hr class="c-hr">
 
 
     <div class="top-selling">
@@ -201,7 +212,7 @@
         </div>
 
         <div class="outfits">
-            <img src="Assests/images/courage-graphicT-shirt.svg" alt="skinny-trouser">
+            <img src="Assests/images/courage-graphicT-shirt.svg" alt="Courage T-shirt">
             <div class="outfit-details">
                 <p>Courage Graphic T-shirt</p>
                 <div class="rating-stars">
@@ -230,7 +241,7 @@
         </div>
 
         <div class="outfits">
-            <img src="Assests/images/fadded-skinny-jean.svg" alt="checked-shirt">
+            <img src="Assests/images/fadded-skinny-jean.svg" alt="checked-shirt" id="jean">
             <div class="outfit-details">
                 <p>Fadded Skinny Jeans</p>
                 <div class="rating-stars">
@@ -245,6 +256,10 @@
             </div>
         </div>
     </section>
+
+    <div class="view-all">
+        <button>View All</button>
+    </div>
 
 <!--DRESS STYLE SECTION-->
 
@@ -271,7 +286,14 @@
 
                 <div class="gym">
                     <p>Gym</p>
-                    <div><img src="Assests/images/gym.svg" alt="Gym" class="browse-img"></div>
+                    <div><img src="Assests/images/gym.svg" alt="Gym" class="browse-img" ></div>
+                </div>
+
+                <div class="gym-two">
+                    <p>Gym</p>
+                    <div class="gym-img">
+                        <img src="Assests/images/gym-two.svg" alt="Gym" class="browse-img" >
+                    </div>
                 </div>
             </div>
         </div>
@@ -280,7 +302,7 @@
 
 <!--CUSTOMER REVIEW SECTION-->
 
-    <section>
+    <section class="our-cutomers">
         <div class="happy-customers">
             <h1>OUR HAPPY CUSTOMERS</h1>
             <div class="scroll-arrows">
@@ -433,49 +455,53 @@
                 </div>
             </div>
 
-            <div class="last-sec">
-                <h3>Company</h3>
+            <div class="company-help">
+                <div class="last-sec">
+                    <h3>Company</h3>
                 <ul>
                     <li>About</li>
                     <li>Feature</li>
                     <li>Works</li>
                     <li>Career</li>
                 </ul>
+                </div>
+
+                <div class="last-sec">
+                    <h3>Help</h3>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Policy</li>
+                    </ul>
+                </div>
             </div>
+            
 
-            <div class="last-sec">
-                <h3>Help</h3>
-                <ul>
-                    <li>Customer Support</li>
-                    <li>Delivery Details</li>
-                    <li>Terms & Conditions</li>
-                    <li>Policy</li>
-                </ul>
+
+            <div class="faq-resources">
+                <div class="last-sec">
+                    <h3>FAQ</h3>
+                    <ul>
+                        <li>Account</li>
+                        <li>Manage Deliveries</li>
+                        <li>Orders</li>
+                        <li>Payments</li>
+                    </ul>
+                </div>
+
+                <div class="last-sec">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>Free eBooks</li>
+                        <li>Development Tutorial</li>
+                        <li>How to - Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
             </div>
-
-
-            <div class="last-sec">
-                <h3>FAQ</h3>
-                <ul>
-                    <li>Account</li>
-                    <li>Manage Deliveries</li>
-                    <li>Orders</li>
-                    <li>Payments</li>
-                </ul>
-            </div>
-
-            <div class="last-sec">
-                <h3>Resources</h3>
-                <ul>
-                    <li>Free eBooks</li>
-                    <li>Development Tutorial</li>
-                    <li>How to - Blog</li>
-                    <li>Youtube Playlist</li>
-                </ul>
-            </div>
-
+            
         </div>
-
         <hr id="f-hr">
 
         <div class="payment-section">
