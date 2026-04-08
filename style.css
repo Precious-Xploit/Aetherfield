@@ -14,6 +14,16 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: "Satoshi";
+    src: url('/Assests/fonts/Satoshi-Variable/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
 @font-face {
     font-family: "Versace";
     src: url('/Assests/fonts/Versace-Font/Radiant\ Bold\ Condensed\ Regular.ttf') format('truetype');
@@ -55,15 +65,25 @@
 }
 
 body{
-margin: 0 auto;
-   width: 1350px;
+margin: 0%;
+height: 100vh;
+}
+
+.aether{
+    width: 1400px;
+    display: grid;
+    justify-content: center;
 }
 
 /* SIGN UP SECTION */
 
+
+.signUp-bg{
+        width: 100%;
+     background-color: black;
+}
 .signUp{
     position: relative;
-    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
@@ -82,8 +102,8 @@ font-size: 12px;
 }
 
 .signUp img{
-    position: absolute;
-    right: 120px;
+    position: relative;
+    left: 400px;
 }
 
 /*HEADER SECTIION*/
@@ -117,6 +137,10 @@ font-size: 12px;
 }
 
 .search-section{
+    display: none;
+}
+
+.search-section-two{
     display: flex;
     align-items: center;
 }
@@ -125,13 +149,13 @@ font-size: 12px;
     display: none;
 }
 
-.search-section >img{
+.search-section-two >img{
     position: absolute;
     width: 15px;
     padding-left: 10px;
 }
 
-.search-section > input{
+.search-section-two > input{
     padding-left: 30px;
     width: 400px;
     height: 40px;
@@ -139,6 +163,9 @@ font-size: 12px;
     border-radius: 25px;
     border: 0;
 }
+
+
+
 
 .cart-profile{
     display: flex;
@@ -182,11 +209,11 @@ font-size: 12px;
     font-size: 55px;
 }
 .text-section p{
-    font-family: "Inter", sans-serif;
+    font-family: "Satoshi", sans-serif;
     font-weight: 200;
     font-size: 13px;
     line-height: 20px;
-    color: #747272;
+    color: #504f4f;
 }
 
 .text-section button{
@@ -244,16 +271,22 @@ font-size: 12px;
 
 /*BRANDS */
 
+
 .brands{
     background-color: black;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    font-size:45px;
+    font-size:40px;
     position: relative;
     margin: -5px;
+    gap: 100px;
+}
+
+.brands br{
+    display: none;
 }
 
 #versace{
@@ -395,7 +428,7 @@ hr{
     gap: 20px;
     justify-content: center;
     border-radius: 40px;
-    margin: 0 60px;
+    margin: 0 auto;
     padding-bottom: 100px;
 }
 
@@ -447,16 +480,22 @@ hr{
     display: none;
 }
 /*CUSTOMER REVIEW SECTION*/
+
+.our-cutomers{
+    display: grid;
+    justify-content: center;
+}
 .happy-customers{
+
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 30px;
-    gap: 700px;
 }
 
 .happy-customers h1{
     font-family: "IntegralCF";
     font-size: 40px;
+    padding-right: 450px;
 }
 
 .scroll-arrows{
@@ -466,11 +505,13 @@ hr{
 }
 
 .customer-review{
+     
     border: 0.5px solid rgb(230, 227, 227);
     min-width: 300px;
     font-family: "Satoshi";
     border-radius: 10px;
     padding: 30px;
+   
 }
 
 .customer-name{
@@ -489,7 +530,9 @@ hr{
 }
 
 .c-review{
+    max-width: 1400px;
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
     overflow-x: auto;
     scrollbar-width: none;
@@ -500,24 +543,32 @@ hr{
 footer{
     background-color: rgb(230, 227, 227);
     margin-top: 200px;
+    width: 100%;
 }
+
 .subscribe{
     position: relative;
     top: -100px;
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 60%;
+    max-width: 1000px;
     margin: 50px auto;
     border-radius: 15px;
     padding: 30px;
 }
 
+.text-mail{
+
+    display: flex;
+    gap: 100px;
+}
+
 .subscribe h1{
     font-family: "IntegralCF";
-    min-width: 200px;
+    max-width: 450px;
 }
 .email{
     align-items: center;
@@ -541,6 +592,7 @@ footer{
     border-radius: 25px;
     border: none;
     font-size: 15px;
+    font-family: "Satoshi";
 }
 .email-news button{
     padding-left: 45px;
@@ -552,6 +604,8 @@ footer{
     font-family: "Satoshi";
     font-weight: 500;
     font-size: 15px;
+    text-align: center;
+    padding-right: 20px;
 }
 
 .email-news button:hover{
@@ -560,15 +614,19 @@ footer{
 
 .closing-sec{
     display: flex;
-    justify-content: space-between;
-    width: 65%;
+    justify-content: center;
     margin: 0px auto;
     margin-top: -130px;
     border-radius: 15px;
     padding: 30px;
     align-items: center;
     font-family: "Satoshi";
+    gap: 40px;
     
+}
+
+.closing-sec-two{
+    display: none;
 }
 
 .shop{
@@ -577,9 +635,11 @@ footer{
     color: rgb(85, 84, 83);
     font-size: 12px;
     line-height: 20px;
+    padding-right: 50px;
 }
 
 .shop p{
+    font-family: "Satoshi";
     padding-top: 10px;
 }
 
@@ -596,6 +656,9 @@ footer{
 
 .last-sec{
     margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
 }
 
 .last-sec h3{
@@ -617,22 +680,25 @@ footer{
 }
 
 #f-hr{
-    width: 65%;
-    margin: 0px auto;
+    width: 1000px;
 }
 
 /*Payment Details*/
 
 .payment-section{
     display: flex;
-    justify-content: space-between;
-    width: 65%;
+    justify-content: center;
     margin: 0px auto;
     margin-top: 10px;
     align-items: center;
     color: rgb(85, 84, 83);
     font-size: 15px;
     padding-bottom: 50px;
+    gap: 210px;
+}
+
+.payment-section p{
+    font-family: "Satoshi";
 }
 
 .payment-opt{
@@ -641,21 +707,27 @@ footer{
 }
 
 
+
+
 /*MOBILE RESSPONSIVENESS*/
 @media(min-width: 319px) and (max-width: 480px){
     body{
         width: 100%;
+        overflow-x: hidden;
     } 
 
 
 
     .signUp{
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
         justify-content: center;
-        position: static;
+        
     }
     
+    
+    .signUp > p{
+        font-size: 11px;
+    }
     .signUp > img{
         display: none;
     }
@@ -663,31 +735,32 @@ footer{
     /* NAV SECTION */
 
     .heroSection{
-        width: 90%;
-        margin: 0 auto;
-        justify-content: space-evenly;
+        width: 87%;
+        padding: 0 20px;
+        margin-top: 0px;
+        justify-content: space-between;
         gap: 0px;
     }
 
 
 
     .cart-profile{
-        width: 90%;
         justify-content: flex-end;
     }
+
     .menu-logo{
         display: flex;
         gap: 5px;
-        width: 90%;
     }
 
     .menu-logo > img{
-        width: 130px;
+        width: 110px;
     }
 
     #menu{
         width: 20px;
     }
+
     .s-icon{
         display: flex;
     }
@@ -709,8 +782,11 @@ footer{
     }
 
 
+    .search-section-two{
+        display: none;
+    }
     .new-sec{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         flex-direction: column;
 
@@ -726,16 +802,17 @@ footer{
 
     .text-section h1{
         max-width: 300px;
-        font-size: 27px;
+        font-size: 33px;
         line-height: 40px;
     }
 
     .text-section p{
+        
         font-size: 12px;
     }
 
     .text-section button{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         justify-content: center;
         font-size: 11px;
@@ -745,7 +822,8 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        max-width: 324px;
+        max-width: 90%;
+        margin: 0 auto;
         font-size: 35px;
     }
 
@@ -804,14 +882,19 @@ footer{
 
     .brands{
         font-size: 30px;
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        margin: -7px auto;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 25px;
+        font-size: 35px;
+
+    }.brands br{
+        display: block;
     }
 
     #versace{
+        
         margin: 0 ;
        
     }
@@ -822,9 +905,11 @@ footer{
         margin: 0 ;
     }
     #prada{
+        font-size: 25px;
         margin: 0 ;
     }
     #calvin-klein{
+        font-size: 27px;
         margin: 0 ;
     } 
 
@@ -833,7 +918,7 @@ footer{
         display: flex;
         flex-wrap: nowrap;
         width: 90%;
-        margin: 0 auto;
+        margin: 0px auto;
         overflow-x: auto;
         scrollbar-width: none;
     }
@@ -866,6 +951,7 @@ footer{
     }
 
    .view-all button{
+
         width: 90%;
         margin: 0 auto;
    }
@@ -883,14 +969,18 @@ footer{
    /* DRESS STYLE SECTION */
 
    .dress-style{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
-    margin: 50px auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
    }
 
    .dress-style h1{
+    padding-top: 30px;
     width: 90%;
     margin: 0 auto;
     font-size: 35px;
@@ -964,6 +1054,7 @@ footer{
    /* REVIEW SECTION */
 
    .our-cutomers{
+
         width: 90%;
         margin: 0 auto;
    }
@@ -979,6 +1070,7 @@ footer{
 
    .happy-customers h1{
     font-size: 30px;
+    padding: 0px;
    }
 
    .customer-review{
@@ -990,92 +1082,149 @@ footer{
    /* SUBSCRIBE SECTION */
 
    .subscribe{
+        display: flex;
         flex-direction: column;
-        width:70%;
+        justify-content: center;
+        width: 80%;
         margin: 0 auto;
-        padding: 0 30px;
         padding-bottom: 20px;
    }
 
-   .email-news{
-    width: 40%;
+   .subscribe h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    max-width:80%;
     margin: 0 auto;
-    justify-content: center;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 0px;
    }
+
+
+   .email-news{
+        width: 90%;
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0px;
+
+   }
+
 
    .email input{
-        width: 250px;
-        
+    justify-content: center;
+    font-size: 12px;
+    height: 40px;
+    max-width: 70%;
+    /* margin: 0 auto; */
+    margin: 0px;
    }
 
-   .email-news button{
-        width: 300px;
+   .email-news button{ 
+    width: 83%;
+    /* margin: 0 auto; */
+    height: 40px;
+    font-size: 12px;
+    padding: 0px;
+   }
+
+   .email > img{
+    margin-left: 5px;
+    width: 15px;
+    padding-left:10px;
+   }
+
+   .text-mail{
+    display: grid;
+    justify-content: center;
+    gap: 0px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 30px;
    }
 
    /* CLOSING SECTION */
 
 
    .closing-sec{
+    display: none;
+   }
 
+   .closing-sec-two{
+    font-family: "Satoshi";
     display: grid;
-    width: 70%;
-    margin-top: -70px ;
+    width: 90%;
+    margin-top: -50px ;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     
    }
 
-   .shop{
-    width: 90%;
+   .shop-two{
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-
-    margin-top: 0px;
-    margin-bottom: 30px;
-    justify-content: flex-start;
+    margin-top: -20px;
+    margin-bottom: 10px;
    }
 
-   .shop p{
+   .shop-two p{
     padding-top: 5px;
+    font-size: 15px;
+    color: #747272;
    }
 
-   .shop img{
-    padding-top: 0px;
+   .shop-two img{
+    padding-top: 20px;
+    
+   }
+
+   .media-two{
+    margin-top: -10px;
    }
 
    .company-help{
-
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-   }
-
-   .faq-resources{
-
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
     padding-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 100px;
+    font-family: "Satoshi";
    }
 
-   .f-hr{
+
+   .faq-resources{
+    margin: 0px;
+    max-width: 100%;
+    padding-top: 30px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    font-family: "Satoshi";
+   }
+
+   .last-sec{
+    padding-left: 0px;
+   }
+
+   #f-hr{
     width: 90%;
-    margin: 30px auto;
+    margin: 0 auto;
 
    }
 
 
    .payment-section{
+    font-family: "Satoshi";
     width: 100%;
     flex-direction: column;
     justify-content: center;
-
+    gap: 0px;
    }
 
    .payment-opt{
