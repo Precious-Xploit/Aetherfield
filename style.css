@@ -409,7 +409,7 @@ font-size: 12px;
 
 hr{
     margin-top: 50px;
-    width: 1300px;
+    width: 1200px;
 }
 
 .top-selling > h1{
@@ -517,6 +517,7 @@ hr{
 .customer-name{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .customer-name p{
@@ -539,6 +540,7 @@ hr{
     gap: 10px;
 }
 
+
 /*FOOTER SECTION*/
 footer{
     background-color: rgb(230, 227, 227);
@@ -557,11 +559,10 @@ footer{
     max-width: 1000px;
     margin: 50px auto;
     border-radius: 15px;
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
 }
 
 .text-mail{
-
     display: flex;
     gap: 100px;
 }
@@ -569,6 +570,7 @@ footer{
 .subscribe h1{
     font-family: "IntegralCF";
     max-width: 450px;
+    padding-top: 25px;
 }
 .email{
     align-items: center;
@@ -583,7 +585,8 @@ footer{
 .email-news{
     display: grid;
     gap: 10px;
-    
+    margin-top: 25px;
+    align-items: center;
 }
 .email input{
     padding-left: 45px;
@@ -736,9 +739,10 @@ footer{
 
     .heroSection{
         width: 87%;
-        padding: 0 20px;
+        padding: 20px 20px;
         margin-top: 0px;
         justify-content: space-between;
+        align-content: center;
         gap: 0px;
     }
 
@@ -1093,8 +1097,8 @@ footer{
    .subscribe h1{
     display: flex;
     flex-wrap: wrap;
-    font-size: 25px;
-    max-width:80%;
+    font-size: 30px;
+    max-width:90%;
     margin: 0 auto;
     padding-left: 0px;
     padding-top: 20px;
@@ -1117,13 +1121,13 @@ footer{
     justify-content: center;
     font-size: 12px;
     height: 40px;
-    max-width: 70%;
+    max-width: 72%;
     /* margin: 0 auto; */
     margin: 0px;
    }
 
    .email-news button{ 
-    width: 83%;
+    width: 85%;
     /* margin: 0 auto; */
     height: 40px;
     font-size: 12px;
@@ -1192,8 +1196,18 @@ footer{
     padding-top: 30px;
     display: flex;
     justify-content: flex-start;
-    gap: 100px;
+    gap: 120px;
     font-family: "Satoshi";
+  
+   }
+
+   .last-sec li{
+       font-size: 15px;
+
+   }
+
+   .last-sec h3{
+    margin-bottom: 0px;
    }
 
 
@@ -1204,7 +1218,7 @@ footer{
     padding-left: 0px;
     display: flex;
     justify-content: flex-start;
-    gap: 100px;
+    gap: 70px;
     font-family: "Satoshi";
    }
 
@@ -1221,6 +1235,7 @@ footer{
 
    .payment-section{
     font-family: "Satoshi";
+   
     width: 100%;
     flex-direction: column;
     justify-content: center;
